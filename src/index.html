@@ -1,271 +1,249 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>3D Grid Interaction with Content Preview | Codrops</title>
-		<meta name="description" content="A grid layout with content preview and a magnetic effect." />
-		<meta name="keywords" content="gsap, 3d, grid, thumbnails, content, preview, front end, css, javascript" />
-		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="favicon.ico">
-		<link rel="stylesheet" href="https://use.typekit.net/gyf5muf.css">
-		<link rel="stylesheet" type="text/css" href="css/base.css" />
-		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
-	</head>
-	<body class="loading">
-		<main>
-			<div class="message">Please view this demo on a desktop to see the effect.</div>
-			<div class="frame">
-				<div class="frame__title-wrap">
-					<h1 class="frame__title">3D Grid Interaction with Content Preview</h1>
-				</div>
-				<div class="frame__links">
-					<a href="https://tympanus.net/Development/3DGridContentPreview/">Previous demo</a>
-					<a href="https://tympanus.net/codrops/?p=54253">Article</a>
-					<a href="https://github.com/codrops/3DGridContentPreview">GitHub</a>
-				</div>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>IgniteXL</title>
+	<meta name="description"
+		content="A grid layout investment portfolio with content preview and a magnetic effect. Done for Ignite Ventures, a VC firm in California." />
+	<meta name="keywords" content="gsap, 3d, grid, thumbnails, content, preview, front end, css, javascript" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="https://use.typekit.net/gyf5muf.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<script>document.documentElement.className = "js"; var supportsCssVars = function () { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e }; supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+</head>
+
+<body class="loading">
+	<main>
+		<div class="message">Please view this website on desktop for a full experience.</div>
+		<div class="frame">
+			<div class="frame__title-wrap">
+				<h1 class="frame__title">IgniteXL Ventures</h1>
 			</div>
-			<div class="content">
-				<h2 class="content__title">
-					<span class="content__title-line content__title-line--1" data-splitting>July/</span>
-					<span class="content__title-line content__title-line--2" data-splitting>August</span>
-				</h2>
-				<div class="grid">
-					<a href="#preview-1" class="grid__item pos-1" data-title="Mohanneles"><div class="grid__item-img" style="background-image:url(img/thumbs/1.jpg);"></div></a>
-					<a href="#preview-2" class="grid__item pos-2" data-title="Procody X"><div class="grid__item-img" style="background-image:url(img/thumbs/2.jpg);"></div></a>
-					<a href="#preview-3" class="grid__item pos-3" data-title="Evenner"><div class="grid__item-img" style="background-image:url(img/thumbs/3.jpg);"></div></a>
-					<a href="#preview-4" class="grid__item pos-4" data-title="M-Dignate"><div class="grid__item-img" style="background-image:url(img/thumbs/4.jpg);"></div></a>
-					<a href="#preview-5" class="grid__item pos-5" data-title="Boxtony"><div class="grid__item-img" style="background-image:url(img/thumbs/5.jpg);"></div></a>
-					<a href="#preview-6" class="grid__item pos-6" data-title="Ruthfull"><div class="grid__item-img" style="background-image:url(img/thumbs/6.jpg);"></div></a>
-					<a href="#preview-7" class="grid__item pos-7" data-title="La Facuoup"><div class="grid__item-img" style="background-image:url(img/thumbs/7.jpg);"></div></a>
-					<a href="#preview-8" class="grid__item pos-8" data-title="Medivict"><div class="grid__item-img" style="background-image:url(img/thumbs/8.jpg);"></div></a>
-					<a href="#preview-9" class="grid__item pos-9" data-title="Steeplump"><div class="grid__item-img" style="background-image:url(img/thumbs/9.jpg);"></div></a>
-					<a href="#preview-10" class="grid__item pos-10" data-title="Resson"><div class="grid__item-img" style="background-image:url(img/thumbs/10.jpg);"></div></a>
-					<a href="#preview-11" class="grid__item pos-11" data-title="Atinkers"><div class="grid__item-img" style="background-image:url(img/thumbs/11.jpg);"></div></a>
-					<a href="#preview-12" class="grid__item pos-12" data-title="Twinhouse"><div class="grid__item-img" style="background-image:url(img/thumbs/12.jpg);"></div></a>
-					<a href="#preview-13" class="grid__item pos-13" data-title="Lonstrian"><div class="grid__item-img" style="background-image:url(img/thumbs/13.jpg);"></div></a>
-					<a href="#preview-14" class="grid__item pos-14" data-title="Satinge"><div class="grid__item-img" style="background-image:url(img/thumbs/14.jpg);"></div></a>
-					<a href="#preview-15" class="grid__item pos-15" data-title="Vikins"><div class="grid__item-img" style="background-image:url(img/thumbs/15.jpg);"></div></a>
-					<a href="#preview-16" class="grid__item pos-16" data-title="Choulder V"><div class="grid__item-img" style="background-image:url(img/thumbs/16.jpg);"></div></a>
-				</div>
-				<div class="preview">
-					<div class="preview__item" id="preview-1">
-						<button class="preview__item-back unbutton"><span>Back</span></button>
-						<div class="preview__item-imgwrap">
-							<div class="preview__item-img" style="background-image:url(img/full/1.jpg);"></div>
-						</div>
-						<h2 data-splitting class="preview__item-title">Mohanneles</h2>
-						<div class="preview__item-content">
-							<div class="preview__item-meta"><span>Acapulco, Mexico</span><span>15/05/2025</span></div>
-							<p class="preview__item-description">Had a barney with the inlaws a bit miffed pigeons in Trafalgar Square nigh on't goggle box chav hard cheese old boy, marvelous Moriarty pulled a right corker squiffy fork out, a tad stupendous chaps doing my head in ee bah gum.</p>
-							<button class="preview__item-info unbutton">+ Info</button>
-							<button class="preview__item-button">Buy Tickets</button>
-						</div>
-					</div>
-					<div class="preview__item" id="preview-2">
-						<button class="preview__item-back unbutton"><span>Back</span></button>
-						<div class="preview__item-imgwrap">
-							<div class="preview__item-img" style="background-image:url(img/full/2.jpg);"></div>
-						</div>
-						<h2 data-splitting class="preview__item-title">Procody X</h2>
-						<div class="preview__item-content">
-							<div class="preview__item-meta"><span>Bangkok, Thailand</span><span>22/02/2025</span></div>
-							<p class="preview__item-description">Houlligan pants pork dripping Moriarty ponce knackered wind up treacle lad bugger, ridicule mince pies ridiculous knackered munta tosser sorted it nonsense. Completely.</p>
-							<button class="preview__item-info unbutton">+ Info</button>
-							<button class="preview__item-button">Buy Tickets</button>
-						</div>
-					</div>
-					<div class="preview__item" id="preview-3">
-						<button class="preview__item-back unbutton"><span>Back</span></button>
-						<div class="preview__item-imgwrap">
-							<div class="preview__item-img" style="background-image:url(img/full/3.jpg);"></div>
-						</div>
-						<h2 data-splitting class="preview__item-title">Evenner</h2>
-						<div class="preview__item-content">
-							<div class="preview__item-meta"><span>Berlin, Germany</span><span>16/05/2025</span></div>
-							<p class="preview__item-description">See a man about a dog naff chav gallivanting around Big Ben, blummin' rambunctious brainbox. A cuppa nuthouse ask your mother if it's just not cricket marmite, ever so lovely pennyboy. They can sod off stew and dumps.</p>
-							<button class="preview__item-info unbutton">+ Info</button>
-							<button class="preview__item-button">Buy Tickets</button>
-						</div>
-					</div>
-					<div class="preview__item" id="preview-4">
-						<button class="preview__item-back unbutton"><span>Back</span></button>
-						<div class="preview__item-imgwrap">
-							<div class="preview__item-img" style="background-image:url(img/full/4.jpg);"></div>
-						</div>
-						<h2 data-splitting class="preview__item-title">M-Dignate</h2>
-						<div class="preview__item-content">
-							<div class="preview__item-meta"><span>Berlin, Germany</span><span>26/06/2025</span></div>
-							<p class="preview__item-description">Gravy cheese and chips cotton on in a pickle narky bargain Betty chips see a man about a dog hedgehog a right toff bow ties are cool bloody shambles chaps, Sherlock the lakes a right royal knees up.</p>
-							<button class="preview__item-info unbutton">+ Info</button>
-							<button class="preview__item-button">Buy Tickets</button>
-						</div>
-					</div>
-					<div class="preview__item" id="preview-5">
-						<button class="preview__item-back unbutton"><span>Back</span></button>
-						<div class="preview__item-imgwrap">
-							<div class="preview__item-img" style="background-image:url(img/full/5.jpg);"></div>
-						</div>
-						<h2 data-splitting class="preview__item-title">Boxtony</h2>
-						<div class="preview__item-content">
-							<div class="preview__item-meta"><span>Lisbon, Portugal</span><span>09/12/2025</span></div>
-							<p class="preview__item-description">Naff off taking the mick blummin' curtain twitching what a load of guff, wind up pezzy little a total jessie. Any road, best be off gutted it's me peepers pigeons in Trafalgar Square..</p>
-							<button class="preview__item-info unbutton">+ Info</button>
-							<button class="preview__item-button">Buy Tickets</button>
-						</div>
-					</div>
-					<div class="preview__item" id="preview-6">
-						<button class="preview__item-back unbutton"><span>Back</span></button>
-						<div class="preview__item-imgwrap">
-							<div class="preview__item-img" style="background-image:url(img/full/6.jpg);"></div>
-						</div>
-						<h2 data-splitting class="preview__item-title">Ruthfull</h2>
-						<div class="preview__item-content">
-							<div class="preview__item-meta"><span>Berlin, Germany</span><span>21/08/2025</span></div>
-							<p class="preview__item-description">And her Majesty's pleasure on his bill sausage roll off with her head squirrel baffled Shakespeare, stiff upper lip damn 'ar kid a cracking and thus. Jolly hockey sticks chinwag penny-dreadful stupendous indeed.</p>
-							<button class="preview__item-info unbutton">+ Info</button>
-							<button class="preview__item-button">Buy Tickets</button>
-						</div>
-					</div>
-					<div class="preview__item" id="preview-7">
-						<button class="preview__item-back unbutton"><span>Back</span></button>
-						<div class="preview__item-imgwrap">
-							<div class="preview__item-img" style="background-image:url(img/full/7.jpg);"></div>
-						</div>
-						<h2 data-splitting class="preview__item-title">La Facuoup</h2>
-						<div class="preview__item-content">
-							<div class="preview__item-meta"><span>Madrid, Spain</span><span>18/010/2025</span></div>
-							<p class="preview__item-description">a fiver cotton on rambunctious. Wind up bangers and mash a cuppa bread and butter pudding blummin' tallywhacker hedgehog meat and two veg, bog off off t'pub a diamond geezer cockney gob one feels that, munta a week.</p>
-							<button class="preview__item-info unbutton">+ Info</button>
-							<button class="preview__item-button">Buy Tickets</button>
-						</div>
-					</div>
-					<div class="preview__item" id="preview-8">
-						<button class="preview__item-back unbutton"><span>Back</span></button>
-						<div class="preview__item-imgwrap">
-							<div class="preview__item-img" style="background-image:url(img/full/8.jpg);"></div>
-						</div>
-						<h2 data-splitting class="preview__item-title">Medivict</h2>
-						<div class="preview__item-content">
-							<div class="preview__item-meta"><span>Berlin, Germany</span><span>03/09/2025</span></div>
-							<p class="preview__item-description">Roast beef penny-dreadful it's cracking flags double dutch come hither on a stag do absolute slappers, marmite a right royal knees up fancy a cuppa have a bash naff for sooth, goggledegook grab a jumper utter shambles.</p>
-							<button class="preview__item-info unbutton">+ Info</button>
-							<button class="preview__item-button">Buy Tickets</button>
-						</div>
-					</div>
-					<div class="preview__item" id="preview-9">
-						<button class="preview__item-back unbutton"><span>Back</span></button>
-						<div class="preview__item-imgwrap">
-							<div class="preview__item-img" style="background-image:url(img/full/9.jpg);"></div>
-						</div>
-						<h2 data-splitting class="preview__item-title">Steeplump</h2>
-						<div class="preview__item-content">
-							<div class="preview__item-meta"><span>London, United Kingdom</span><span>16/01/2025</span></div>
-							<p class="preview__item-description">In the jacksy daft cow 'tis could murder a pint cotton on, crumpets brown sauce a tad. Oo ecky thump what a mug lass jellied eels bottled it it's spitting, bog roll absolute it's spitting driving a mini nicked a cracking.</p>
-							<button class="preview__item-info unbutton">+ Info</button>
-							<button class="preview__item-button">Buy Tickets</button>
-						</div>
-					</div>
-					<div class="preview__item" id="preview-10">
-						<button class="preview__item-back unbutton"><span>Back</span></button>
-						<div class="preview__item-imgwrap">
-							<div class="preview__item-img" style="background-image:url(img/full/10.jpg);"></div>
-						</div>
-						<h2 data-splitting class="preview__item-title">Resson</h2>
-						<div class="preview__item-content">
-							<div class="preview__item-meta"><span>Vienna, Austria</span><span>12/03/2025</span></div>
-							<p class="preview__item-description">The chippy tally-ho The Hounds of Baskerville pot noodle 'ar kid conked him one on the nose fancy a cuppa bowler hat doing my nut in black cab, trouble and strife sausage roll damn conked him one on the nose ponce.</p>
-							<button class="preview__item-info unbutton">+ Info</button>
-							<button class="preview__item-button">Buy Tickets</button>
-						</div>
-					</div>
-					<div class="preview__item" id="preview-11">
-						<button class="preview__item-back unbutton"><span>Back</span></button>
-						<div class="preview__item-imgwrap">
-							<div class="preview__item-img" style="background-image:url(img/full/11.jpg);"></div>
-						</div>
-						<h2 data-splitting class="preview__item-title">Atinkers</h2>
-						<div class="preview__item-content">
-							<div class="preview__item-meta"><span>Berlin, Germany</span><span>22/08/2025</span></div>
-							<p class="preview__item-description">Doing my nut in chav scouser cheesed off chav scally, Sherlock brown sauce god save the queen shortbread, cobbles pigeons in Trafalgar Square pork dripping.</p>
-							<button class="preview__item-info unbutton">+ Info</button>
-							<button class="preview__item-button">Buy Tickets</button>
-						</div>
-					</div>
-					<div class="preview__item" id="preview-12">
-						<button class="preview__item-back unbutton"><span>Back</span></button>
-						<div class="preview__item-imgwrap">
-							<div class="preview__item-img" style="background-image:url(img/full/12.jpg);"></div>
-						</div>
-						<h2 data-splitting class="preview__item-title">Twinhouse</h2>
-						<div class="preview__item-content">
-							<div class="preview__item-meta"><span>Berlin, Germany</span><span>29/07/2025</span></div>
-							<p class="preview__item-description">Collywobbles completely starkers 221B Baker Street terribly round our gaff Shakespeare a tad, driving a mini have a gander could be a bit of a git nose rag. Cornish pasty old girl up the duff ey up every.</p>
-							<button class="preview__item-info unbutton">+ Info</button>
-							<button class="preview__item-button">Buy Tickets</button>
-						</div>
-					</div>
-					<div class="preview__item" id="preview-13">
-						<button class="preview__item-back unbutton"><span>Back</span></button>
-						<div class="preview__item-imgwrap">
-							<div class="preview__item-img" style="background-image:url(img/full/13.jpg);"></div>
-						</div>
-						<h2 data-splitting class="preview__item-title">Lonstrian</h2>
-						<div class="preview__item-content">
-							<div class="preview__item-meta"><span>Sydney, Australia</span><span>19/07/2025</span></div>
-							<p class="preview__item-description">Bit of a div I could reet fancy a knows bugger all about nowt easy peasy two weeks on't trot Shakespeare cockney blummin', corgi you mean it ain't me noggin' alright duck stew and dumps.</p>
-							<button class="preview__item-info unbutton">+ Info</button>
-							<button class="preview__item-button">Buy Tickets</button>
-						</div>
-					</div>
-					<div class="preview__item" id="preview-14">
-						<button class="preview__item-back unbutton"><span>Back</span></button>
-						<div class="preview__item-imgwrap">
-							<div class="preview__item-img" style="background-image:url(img/full/14.jpg);"></div>
-						</div>
-						<h2 data-splitting class="preview__item-title">Satinge</h2>
-						<div class="preview__item-content">
-							<div class="preview__item-meta"><span>Paris, France</span><span>22/06/2025</span></div>
-							<p class="preview__item-description">Essex girls how's your father stop arsing around Sonic Screwdriver, off t'shop real ale you mean it ain't me noggin' stiff upper lip what a mug Time Lord, ridicule Time Lord in the jacksy Big Ben houlligan.</p>
-							<button class="preview__item-info unbutton">+ Info</button>
-							<button class="preview__item-button">Buy Tickets</button>
-						</div>
-					</div>
-					<div class="preview__item" id="preview-15">
-						<button class="preview__item-back unbutton"><span>Back</span></button>
-						<div class="preview__item-imgwrap">
-							<div class="preview__item-img" style="background-image:url(img/full/15.jpg);"></div>
-						</div>
-						<h2 data-splitting class="preview__item-title">Vikins</h2>
-						<div class="preview__item-content">
-							<div class="preview__item-meta"><span>Belgrade, Serbia</span><span>04/11/2025</span></div>
-							<p class="preview__item-description">The chippy because there was nothing on the gogglebox mince pies crumpets 10 pence mix one off marvelous smeg head black cab it's nicked doofer what a doddle.</p>
-							<button class="preview__item-info unbutton">+ Info</button>
-							<button class="preview__item-button">Buy Tickets</button>
-						</div>
-					</div>
-					<div class="preview__item" id="preview-16">
-						<button class="preview__item-back unbutton"><span>Back</span></button>
-						<div class="preview__item-imgwrap">
-							<div class="preview__item-img" style="background-image:url(img/full/16.jpg);"></div>
-						</div>
-						<h2 data-splitting class="preview__item-title">Choulder V</h2>
-						<div class="preview__item-content">
-							<div class="preview__item-meta"><span>Moscow, Russia</span><span>10/08/2025</span></div>
-							<p class="preview__item-description">It's the bees knees oopsy-daisies bottled it on his bill Essex girls in a pickle ever so, flabbergasted what a load of cobblers in the goolies Bad Wolf chuffed, and grab a jumper have a kip narky one off.</p>
-							<button class="preview__item-info unbutton">+ Info</button>
-							<button class="preview__item-button">Buy Tickets</button>
-						</div>
-					</div>
-				</div>
+			<div class="frame__links">
+				<a class="icon" href="https://www.facebook.com/ignitexl">
+					<i class="fab fa-facebook-square fa-lg"></i>
+				</a>
+				<a class="icon"
+					href="https://www.linkedin.com/company/ignitexl/about/?msgControlName=reply_to_sender&msgConversationId=5996689136298258432&msgOverlay=true&viewAsMember=true">
+					<i class="fab fa-linkedin fa-lg"></i>
+				</a>
+				<a class="icon" href="https://twitter.com/igniteXL">
+					<i class="fab fa-twitter-square fa-lg"></i>
+				</a>
 			</div>
-		</main>
-		<div class="cursor">
-			<svg class="cursor__svg" width="80" height="80" viewBox="0 0 80 80">
-				<circle vector-effect="non-scaling-stroke" class="cursor__svg-circle" cx="40" cy="40" r="20"/>
-			</svg>
-			<span class="cursor__text"></span>
 		</div>
-		<script src="js/index.js"></script>
-	</body>
+		<div class="content">
+			<h2 class="content__title">
+				<span class="content__title-line content__title-line--1" data-splitting>IGNITEXL</span>
+				<span class="content__title-line content__title-line--2" data-splitting>VENTURES</span>
+				<span class="content__title-line content__title-line--3" data-splitting>PORTFOLIO</span>
+			</h2>
+			<div class="grid">
+				<a href="#preview-1" class="grid__item pos-1" data-title="Dr. Elsa Jungman">
+					<div class="grid__item-img" style="background-image:url(img/thumbs/1.jpg);"></div>
+				</a>
+				<a href="#preview-2" class="grid__item pos-2" data-title="Dr Jones">
+					<div class="grid__item-img" style="background-image:url(img/thumbs/2.jpg);"></div>
+				</a>
+				<a href="#preview-3" class="grid__item pos-3" data-title="Yesplz">
+					<div class="grid__item-img" style="background-image:url(img/thumbs/3.jpg);"></div>
+				</a>
+				<a href="#preview-4" class="grid__item pos-4" data-title="Alleyoop">
+					<div class="grid__item-img" style="background-image:url(img/thumbs/4.jpg);"></div>
+				</a>
+				<a href="#preview-5" class="grid__item pos-5" data-title="Tabella">
+					<div class="grid__item-img" style="background-image:url(img/thumbs/5.jpg);"></div>
+				</a>
+				<a href="#preview-6" class="grid__item pos-6" data-title="wild.ai">
+					<div class="grid__item-img" style="background-image:url(img/thumbs/6.jpg);"></div>
+				</a>
+				<a href="#preview-7" class="grid__item pos-7" data-title="Bubble Skincare">
+					<div class="grid__item-img" style="background-image:url(img/thumbs/7.jpg);"></div>
+				</a>
+				<a href="#preview-8" class="grid__item pos-8" data-title="Oros Apparel">
+					<div class="grid__item-img" style="background-image:url(img/thumbs/8.jpg);"></div>
+				</a>
+				<a href="#preview-9" class="grid__item pos-9" data-title="Stryx">
+					<div class="grid__item-img" style="background-image:url(img/thumbs/9.jpg);"></div>
+				</a>
+				<a href="#preview-10" class="grid__item pos-10" data-title="Good Light">
+					<div class="grid__item-img" style="background-image:url(img/thumbs/10.jpg);"></div>
+				</a>
+			</div>
+			<div class="preview">
+				<div class="preview__item" id="preview-1">
+					<button class="preview__item-back unbutton"><span>Back</span></button>
+					<div class="preview__item-imgwrap">
+						<div class="preview__item-img" style="background-image:url(img/full/1.jpg);"></div>
+					</div>
+					<h2 data-splitting class="preview__item-title">Dr. Elsa Jungman</h2>
+					<div class="preview__item-content">
+						<div class="preview__item-meta"><span>HLSI Skin Health, Inc.</span><span>hello@dr-ej.com</span></div>
+						<p class="preview__item-description">Straight-forward, minimalist skincare solutions for troubled skin. Take
+							our skincare quiz to design your own simple, two-step skincare routine. Microbiome-friendly to enhance and
+							be kind to your natural skin barrier.</p>
+						<button onclick="location.href='https://www.dr-ej.com/'" class="preview__item-info unbutton"
+							type="button">dr-ej.com</button>
+
+					</div>
+				</div>
+				<div class="preview__item" id="preview-2">
+					<button class="preview__item-back unbutton"><span>Back</span></button>
+					<div class="preview__item-imgwrap">
+						<div class="preview__item-img" style="background-image:url(img/full/2.jpg);"></div>
+					</div>
+					<h2 data-splitting class="preview__item-title">Dr. Jones</h2>
+					<div class="preview__item-content">
+						<div class="preview__item-meta"><span>São Paulo, Brazil</span><span>ola@drjones.com.br</span></div>
+						<p class="preview__item-description">
+							Since the creation of Dr. JONES much has changed, but what remains the same (and always will be) is our
+							goal of developing solutions for man. Practical products, with safe formulas and high performance.
+						</p>
+						<button onclick="location.href='https://www.drjones.com.br/'" class="preview__item-info unbutton"
+							type="button">drjones.com.br</button>
+
+					</div>
+				</div>
+				<div class="preview__item" id="preview-3">
+					<button class="preview__item-back unbutton"><span>Back</span></button>
+					<div class="preview__item-imgwrap">
+						<div class="preview__item-img" style="background-image:url(img/full/3.jpg);"></div>
+					</div>
+					<h2 data-splitting class="preview__item-title">YESPLZ</h2>
+					<div class="preview__item-content">
+						<div class="preview__item-meta"><span>Mountain View, CA</span><span>hello@yesplz.ai</span></div>
+						<p class="preview__item-description">YesPlz helps put the joy back in online shopping while reducing
+							hair-pulling frustration for customers who know just that exact thing they’re looking for but can’t put it
+							into words — and who know it when they see it.</p>
+						<button onclick="location.href='https://www.yesplz.ai/'" class="preview__item-info unbutton"
+							type="button">yesplz.ai</button>
+
+					</div>
+				</div>
+				<div class="preview__item" id="preview-4">
+					<button class="preview__item-back unbutton"><span>Back</span></button>
+					<div class="preview__item-imgwrap">
+						<div class="preview__item-img" style="background-image:url(img/full/4.jpg);"></div>
+					</div>
+					<h2 data-splitting class="preview__item-title">Alleyoop</h2>
+					<div class="preview__item-content">
+						<div class="preview__item-meta"><span>Alleyoop, Inc.</span><span>help@meetalleyoop.com</span></div>
+						<p class="preview__item-description">We’re on a mission to build a new type of company — one that makes it
+							easier and more fun for women to do it all (whatever that looks like to you). Our one-of-a-kind products
+							are a love letter to busy lifestyles and a rebellion against anything that slows us down.</p>
+						<button onclick="location.href='https://meetalleyoop.com/'" class="preview__item-info unbutton"
+							type="button">meetalleyoop.com</button>
+
+					</div>
+				</div>
+				<div class="preview__item" id="preview-5">
+					<button class="preview__item-back unbutton"><span>Back</span></button>
+					<div class="preview__item-imgwrap">
+						<div class="preview__item-img" style="background-image:url(img/full/5.jpg);"></div>
+					</div>
+					<h2 data-splitting class="preview__item-title">Tabella</h2>
+					<div class="preview__item-content">
+						<div class="preview__item-meta"><span>© 2020 Tabella</span></div>
+						<p class="preview__item-description">Tabella is the private and secure social faith app for Catholic
+							communities. With Tabella, Catholics around the world can now stay connected digitally to their churches
+							and groups, and grow in their faith through access to the best Catholic content (audio prayers, faith
+							videos, and much more).</p>
+						<button onclick="location.href='https://jointabella.com/'" class="preview__item-info unbutton"
+							type="button">jointabella.com</button>
+
+					</div>
+				</div>
+				<div class="preview__item" id="preview-6">
+					<button class="preview__item-back unbutton"><span>Back</span></button>
+					<div class="preview__item-imgwrap">
+						<div class="preview__item-img" style="background-image:url(img/full/6.jpg);"></div>
+					</div>
+					<h2 data-splitting class="preview__item-title">Wild.Ai</h2>
+					<div class="preview__item-content">
+						<div class="preview__item-meta"><span>© Copyright 2021 WILD Technologies AI</span></div>
+						<p class="preview__item-description">WILD supports active females with a menstrual cycle, on birth control,
+							in perimenopause or postmenopause.</p>
+						<button onclick="location.href='https://wild.ai/'" class="preview__item-info unbutton"
+							type="button">wild.ai</button>
+
+					</div>
+				</div>
+				<div class="preview__item" id="preview-7">
+					<button class="preview__item-back unbutton"><span>Back</span></button>
+					<div class="preview__item-imgwrap">
+						<div class="preview__item-img" style="background-image:url(img/full/7.jpg);"></div>
+					</div>
+					<h2 data-splitting class="preview__item-title">Bubble</h2>
+					<div class="preview__item-content">
+						<div class="preview__item-meta"><span>©BUBBLE BEAUTY INC 2021</span></div>
+						<p class="preview__item-description">We take care of your face, so you can take on everything else.</p>
+						<button onclick="location.href='https://hellobubble.com/'" class="preview__item-info unbutton"
+							type="button">hellobubble.com</button>
+
+					</div>
+				</div>
+				<div class="preview__item" id="preview-8">
+					<button class="preview__item-back unbutton"><span>Back</span></button>
+					<div class="preview__item-imgwrap">
+						<div class="preview__item-img" style="background-image:url(img/full/8.jpg);"></div>
+					</div>
+					<h2 data-splitting class="preview__item-title">Oros Apparel</h2>
+					<div class="preview__item-content">
+						<div class="preview__item-meta"><span>© OROS 2021</span></div>
+						<p class="preview__item-description">The science of staying warm hasn't changed for hundreds of years, and
+							OROS knows that "outdated" has no place in outerwear. It's why we tore our technology straight from the
+							cosmos - the same stuff NASA uses to insulate spacecraft - and science'd it into max-warmth, zero-bulk
+							apparel destined to take you beyond.</p>
+						<button onclick="location.href='https://www.orosapparel.com/'" class="preview__item-info unbutton"
+							type="button">orosapparel.com</button>
+
+					</div>
+				</div>
+				<div class="preview__item" id="preview-9">
+					<button class="preview__item-back unbutton"><span>Back</span></button>
+					<div class="preview__item-imgwrap">
+						<div class="preview__item-img" style="background-image:url(img/full/9.jpg);"></div>
+					</div>
+					<h2 data-splitting class="preview__item-title">Stryx</h2>
+					<div class="preview__item-content">
+						<div class="preview__item-meta"></div>
+						<p class="preview__item-description">SOMEWHERE ALONG THE WAY, MEN’S FACES GOT NEGLECTED. LEFT UNCARED FOR.
+							STRYX WAS CREATED FOR ANYONE WHO WANTS THEIR SKIN TO LOOK JUST AS ATTRACTIVE AS THE REST OF THEM.</p>
+						<button onclick="location.href='https://www.stryx.com/'" class="preview__item-info unbutton"
+							type="button">stryx.com</button>
+
+					</div>
+				</div>
+				<div class="preview__item" id="preview-10">
+					<button class="preview__item-back unbutton"><span>Back</span></button>
+					<div class="preview__item-imgwrap">
+						<div class="preview__item-img" style="background-image:url(img/full/10.jpg);"></div>
+					</div>
+					<h2 data-splitting class="preview__item-title">Good Light</h2>
+					<div class="preview__item-content">
+						<div class="preview__item-meta"><span>New York, USA</span><span>hello@goodlight.world</span></div>
+						<p class="preview__item-description">Developed by David Yi, and informed by the Very Good Light community,
+							good light creates highly efficacious, yet gentle personal care products that are for all people
+							regardless of your gender identity or sexuality.</p>
+						<button onclick="location.href='https://goodlight.world/'" class="preview__item-info unbutton"
+							type="button">goodlight.world</button>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<div class="cursor">
+		<svg class="cursor__svg" width="80" height="80" viewBox="0 0 80 80">
+			<circle vector-effect="non-scaling-stroke" class="cursor__svg-circle" cx="40" cy="40" r="20" />
+		</svg>
+		<span class="cursor__text"></span>
+	</div>
+	<script src="js/index.js"></script>
+</body>
+
 </html>

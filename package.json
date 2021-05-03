@@ -1,5 +1,5 @@
 {
-  "name": "3DGridContentPreview",
+  "name": "IgniteXL",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,17 +9,8 @@
     "build:parcel": "parcel build src/index.html --no-content-hash --no-minify --no-source-maps --public-url ./",
     "build": "npm run clean && npm run build:parcel"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/codrops/3DGridContentPreview.git"
-  },
-  "keywords": [],
-  "author": "Codrops",
+  "author": "slimyangy",
   "license": "MIT",
-  "homepage": "[HOMEPAGE]",
-  "bugs": {
-    "url": "https://github.com/codrops/3DGridContentPreview/issues"
-  },
   "dependencies": {
     "gsap": "^3.6.1",
     "imagesloaded": "^4.1.4",
