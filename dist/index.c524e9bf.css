@@ -576,6 +576,9 @@ a:focus {
 	.preview__item-title {
     justify-self: end;
 	}
+	.frame {
+    z-index: 0;
+	}
 }
 /* Recommended styles for Splitting */
 .splitting .word,
